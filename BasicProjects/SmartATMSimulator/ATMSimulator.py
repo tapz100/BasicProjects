@@ -1,0 +1,31 @@
+USER_PIN = 8063
+userBalance = 2000
+userOption = int(input("Enter your pin: "))
+
+if userOption == USER_PIN:
+	print("""
+	1.Check Balance
+	2.Deposit
+	3.Withdraw
+	4.Exit
+	""")
+	
+	userChoice = int(input("Enter your choice:"))
+	
+	if userChoice == 1:
+		print(f"Your current balance is ${userBalance}")
+	elif userChoice == 2:
+		userInputDepositAmount = int(input("Enter amount to be deposited:"))
+		userBalance += userInputDepositAmount
+		print(f"Amount {userInputDepositAmount} has been successfully credited in your account")
+		print(f"Your current balance is: ${userBalance}")
+	elif userChoice == 3:
+		userInputWithdrawAmount = int(input("Enter the withdrawl amount:"))
+		userBalance -= userInputWithdrawAmount 
+		print(f"Amount {userInputWithdrawAmount} has been successfully debited from your account")
+		print(f"Your current balance is: ${userBalance}")
+	else:
+		exit()
+else:
+	print("Invalid PIN. Please try again.")
+		
