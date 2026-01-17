@@ -1,36 +1,41 @@
-What you build
+1) **Rule-Based Student Evaluation System**
+🎯 What you build
 
-A calculator that:
+A decision system that:
 
-Takes two numbers from the user
+Takes marks for 3 subjects
 
-Performs all arithmetic operations
+Calculates:
 
-Uses comparison operators to compare results
+Total
 
-Uses logical operators to describe results
+Average
 
-🧠 Example behavior
+Uses logical rules to determine:
 
-Print sum, difference, product, division
+Pass / Fail
 
-Check:
+Scholarship eligibility
 
-Is sum > product?
+Distinction
 
-Are both numbers positive?
+🧠 Example rules
 
-Is either number zero?
+Average ≥ 75 → Distinction
+
+Average ≥ 50 AND no subject < 40 → Pass
+
+Scholarship if average ≥ 85 AND attendance ≥ 90
 
 🔑 Skills used
 
-Arithmetic (+ - * / %)
+Arithmetic
 
-Comparison (> < ==)
+Comparison
 
-Logical (and, or, not)
+Logical operators
 
 Assignment (+=)
 
-📌 Why this matters:
-This teaches you how computers reason about numbers, not just calculate them.
+📌 Why this is complex:
+You’re building multi-condition decision logic, exactly how grading systems work.
